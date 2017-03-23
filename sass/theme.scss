@@ -38,7 +38,7 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  margin-top: -40px;
+  margin-top: 50px;
   &:before {
     content: '';
     position: absolute;
@@ -68,7 +68,22 @@
     text-align: left;
   }
 }
+// Back to Top Button
+.top-button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 42px;
+  height: 42px;
+  background-color: #666;
+  border: 0;
+  color: #fff;
+  margin-bottom: $spacing*2;
+  &:focus {
+    outline: none;
+  }
 
+}
 .food-intro {
   position: relative;
   margin-top: 150px;

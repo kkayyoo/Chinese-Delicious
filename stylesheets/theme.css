@@ -1,9 +1,16 @@
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
-/* line 9, ../sass/setting.scss */
-body {
-  padding-top: 70px;
+@import url("https://fonts.googleapis.com/css?family=Delius+Unicase|Open+Sans");
+/* line 19, ../sass/setting.scss */
+p, li {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 24, ../sass/setting.scss */
+h1, h2 {
+  font-family: "Delius Unicase", cursive;
 }
 
 /* line 5, ../sass/theme.scss */
@@ -55,7 +62,7 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  margin-top: -40px;
+  margin-top: 50px;
 }
 /* line 42, ../sass/theme.scss */
 .hero:before {
@@ -93,30 +100,47 @@ body {
 }
 
 /* line 72, ../sass/theme.scss */
+.top-button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 42px;
+  height: 42px;
+  background-color: #666;
+  border: 0;
+  color: #fff;
+  margin-bottom: 30px;
+}
+/* line 82, ../sass/theme.scss */
+.top-button:focus {
+  outline: none;
+}
+
+/* line 87, ../sass/theme.scss */
 .food-intro {
   position: relative;
   margin-top: 150px;
 }
 
-/* line 77, ../sass/theme.scss */
+/* line 92, ../sass/theme.scss */
 .food-img img {
   width: 100%;
 }
 
-/* line 81, ../sass/theme.scss */
+/* line 96, ../sass/theme.scss */
 .more {
   position: relative;
   display: block;
   margin: 30px auto;
 }
 
-/* line 88, ../sass/theme.scss */
+/* line 103, ../sass/theme.scss */
 .food-features {
   position: relative;
   margin-top: 100px;
 }
 
-/* line 92, ../sass/theme.scss */
+/* line 107, ../sass/theme.scss */
 .feature {
   border-radius: 100%;
   background-color: #666;
@@ -126,7 +150,7 @@ body {
   width: 220px;
   height: 220px;
 }
-/* line 100, ../sass/theme.scss */
+/* line 115, ../sass/theme.scss */
 .feature h3 {
   position: absolute;
   top: 40%;
@@ -134,24 +158,24 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/* line 109, ../sass/theme.scss */
+/* line 124, ../sass/theme.scss */
 .food-dt {
   position: relative;
   margin-top: 100px;
   margin-bottom: 60px;
 }
-/* line 113, ../sass/theme.scss */
+/* line 128, ../sass/theme.scss */
 .food-dt h2 {
   text-align: center;
   margin: 30px auto;
 }
 
-/* line 119, ../sass/theme.scss */
+/* line 134, ../sass/theme.scss */
 .detail img {
   width: 100%;
 }
 
-/* line 124, ../sass/theme.scss */
+/* line 139, ../sass/theme.scss */
 footer {
   background-color: #666;
   width: 100%;
