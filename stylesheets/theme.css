@@ -1,6 +1,11 @@
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* line 9, ../sass/setting.scss */
+body {
+  padding-top: 70px;
+}
+
 /* line 5, ../sass/theme.scss */
 .home-nav {
   width: 80px;
@@ -40,4 +45,115 @@
     width: 100%;
     height: 280px;
   }
+}
+
+/* line 34, ../sass/theme.scss */
+.hero {
+  width: 100%;
+  min-height: 380px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-top: -40px;
+}
+/* line 42, ../sass/theme.scss */
+.hero:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 380px;
+  background: rgba(17, 17, 17, 0.6);
+}
+
+/* line 52, ../sass/theme.scss */
+#hero1 {
+  background-image: url("../images/hero1.png");
+}
+
+/* line 55, ../sass/theme.scss */
+.hero-info {
+  text-align: center;
+  margin-top: -240px;
+  position: relative;
+  padding: 0 90px;
+}
+/* line 60, ../sass/theme.scss */
+.hero-info h1 {
+  color: #fff;
+  font-size: 3.8rem;
+  margin-bottom: 30px;
+}
+/* line 65, ../sass/theme.scss */
+.hero-info p {
+  color: #fff;
+  font-size: 2.2rem;
+  text-align: left;
+}
+
+/* line 72, ../sass/theme.scss */
+.food-intro {
+  position: relative;
+  margin-top: 150px;
+}
+
+/* line 77, ../sass/theme.scss */
+.food-img img {
+  width: 100%;
+}
+
+/* line 81, ../sass/theme.scss */
+.more {
+  position: relative;
+  display: block;
+  margin: 30px auto;
+}
+
+/* line 88, ../sass/theme.scss */
+.food-features {
+  position: relative;
+  margin-top: 100px;
+}
+
+/* line 92, ../sass/theme.scss */
+.feature {
+  border-radius: 100%;
+  background-color: #666;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  width: 220px;
+  height: 220px;
+}
+/* line 100, ../sass/theme.scss */
+.feature h3 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 109, ../sass/theme.scss */
+.food-dt {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+/* line 113, ../sass/theme.scss */
+.food-dt h2 {
+  text-align: center;
+  margin: 30px auto;
+}
+
+/* line 119, ../sass/theme.scss */
+.detail img {
+  width: 100%;
+}
+
+/* line 124, ../sass/theme.scss */
+footer {
+  background-color: #666;
+  width: 100%;
+  height: 80px;
 }
