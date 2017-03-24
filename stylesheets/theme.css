@@ -54,7 +54,63 @@ h1, h2 {
   }
 }
 
-/* line 34, ../sass/theme.scss */
+/* line 36, ../sass/theme.scss */
+.navbar-default {
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+}
+/* line 43, ../sass/theme.scss */
+.navbar-default .navbar-nav li a {
+  color: #fff;
+}
+/* line 45, ../sass/theme.scss */
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus {
+  border-bottom: 2px solid #f63440;
+  color: #fff;
+}
+/* line 52, ../sass/theme.scss */
+.navbar-default .navbar-nav .active a {
+  background-image: none;
+  background-color: transparent;
+  border-bottom: 2px solid #f63440;
+  box-shadow: none;
+  color: #fff;
+}
+/* line 58, ../sass/theme.scss */
+.navbar-default .navbar-nav .active a:hover, .navbar-default .navbar-nav .active a:focus {
+  background-color: transparent;
+  color: #fff;
+}
+
+/* line 66, ../sass/theme.scss */
+.sticky-background {
+  background-color: #f63440;
+  transition: background-color 0.3s ease-in;
+}
+/* line 71, ../sass/theme.scss */
+.sticky-background .navbar-nav li a {
+  color: #fff;
+}
+/* line 73, ../sass/theme.scss */
+.sticky-background .navbar-nav li a:hover, .sticky-background .navbar-nav li a:focus {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-bottom: 0;
+  color: #fff;
+}
+/* line 81, ../sass/theme.scss */
+.sticky-background .navbar-nav .active a {
+  border-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* line 84, ../sass/theme.scss */
+.sticky-background .navbar-nav .active a:hover, .sticky-background .navbar-nav .active a:focus {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-bottom: 0;
+}
+
+/* line 92, ../sass/theme.scss */
 .hero {
   width: 100%;
   min-height: 380px;
@@ -62,9 +118,8 @@ h1, h2 {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  margin-top: 50px;
 }
-/* line 42, ../sass/theme.scss */
+/* line 99, ../sass/theme.scss */
 .hero:before {
   content: '';
   position: absolute;
@@ -74,32 +129,32 @@ h1, h2 {
   background: rgba(17, 17, 17, 0.6);
 }
 
-/* line 52, ../sass/theme.scss */
+/* line 109, ../sass/theme.scss */
 #hero1 {
   background-image: url("../images/hero1.png");
 }
 
-/* line 55, ../sass/theme.scss */
+/* line 112, ../sass/theme.scss */
 .hero-info {
   text-align: center;
   margin-top: -240px;
   position: relative;
   padding: 0 90px;
 }
-/* line 60, ../sass/theme.scss */
+/* line 117, ../sass/theme.scss */
 .hero-info h1 {
   color: #fff;
   font-size: 3.8rem;
   margin-bottom: 30px;
 }
-/* line 65, ../sass/theme.scss */
+/* line 122, ../sass/theme.scss */
 .hero-info p {
   color: #fff;
   font-size: 2.2rem;
   text-align: left;
 }
 
-/* line 72, ../sass/theme.scss */
+/* line 129, ../sass/theme.scss */
 .top-button {
   position: fixed;
   bottom: 0;
@@ -111,36 +166,36 @@ h1, h2 {
   color: #fff;
   margin-bottom: 30px;
 }
-/* line 82, ../sass/theme.scss */
+/* line 139, ../sass/theme.scss */
 .top-button:focus {
   outline: none;
 }
 
-/* line 87, ../sass/theme.scss */
+/* line 144, ../sass/theme.scss */
 .food-intro {
   position: relative;
   margin-top: 150px;
 }
 
-/* line 92, ../sass/theme.scss */
+/* line 149, ../sass/theme.scss */
 .food-img img {
   width: 100%;
 }
 
-/* line 96, ../sass/theme.scss */
+/* line 153, ../sass/theme.scss */
 .more {
   position: relative;
   display: block;
   margin: 30px auto;
 }
 
-/* line 103, ../sass/theme.scss */
+/* line 160, ../sass/theme.scss */
 .food-features {
   position: relative;
   margin-top: 100px;
 }
 
-/* line 107, ../sass/theme.scss */
+/* line 164, ../sass/theme.scss */
 .feature {
   border-radius: 100%;
   background-color: #666;
@@ -150,7 +205,7 @@ h1, h2 {
   width: 220px;
   height: 220px;
 }
-/* line 115, ../sass/theme.scss */
+/* line 172, ../sass/theme.scss */
 .feature h3 {
   position: absolute;
   top: 40%;
@@ -158,24 +213,24 @@ h1, h2 {
   transform: translate(-50%, -50%);
 }
 
-/* line 124, ../sass/theme.scss */
+/* line 181, ../sass/theme.scss */
 .food-dt {
   position: relative;
   margin-top: 100px;
   margin-bottom: 60px;
 }
-/* line 128, ../sass/theme.scss */
+/* line 185, ../sass/theme.scss */
 .food-dt h2 {
   text-align: center;
   margin: 30px auto;
 }
 
-/* line 134, ../sass/theme.scss */
+/* line 191, ../sass/theme.scss */
 .detail img {
   width: 100%;
 }
 
-/* line 139, ../sass/theme.scss */
+/* line 196, ../sass/theme.scss */
 footer {
   background-color: #666;
   width: 100%;
