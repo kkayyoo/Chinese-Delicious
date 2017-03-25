@@ -1,11 +1,11 @@
 $(function(){
 
-  //Header animation
-    $(document).scroll(function() {
-       var scrollTop = $(this).scrollTop();
-       var headerHeight = $('.hero').height();
-       $('.hero-info').css({'opacity': (1 - scrollTop / headerHeight)});
-    })
+//Header animation
+  $(document).scroll(function() {
+     var scrollTop = $(this).scrollTop();
+     var headerHeight = $('.hero').height();
+     $('.hero-info').css({'opacity': (1 - scrollTop / headerHeight)});
+  })
 
 //Sticky Nav background-color
   $(document).scroll(function(){

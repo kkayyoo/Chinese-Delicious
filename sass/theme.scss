@@ -39,11 +39,15 @@
   border: none;
   box-shadow: none;
   .navbar-nav {
+    margin: 0 -15px;
+    @media (min-width: $sm-screen) {
+      margin: 0;
+    }
     li {
       a {
         color: #fff;
         &:hover, &:focus {
-          border-bottom: 2px solid #f63440;
+          border-bottom: 2px solid $highlight-1;
           color: #fff;
         }
       }
@@ -52,7 +56,7 @@
       a {
         background-image: none;
         background-color: transparent;
-        border-bottom: 2px solid #f63440;
+        border-bottom: 2px solid $highlight-1;
         box-shadow: none;
         color: #fff;
         &:hover, &:focus {
@@ -62,10 +66,47 @@
       }
     }
   }
+  .navbar-collapse {
+    @media (max-width: $sm-screen) {
+      background-color: $highlight-1;
+      li {
+        a {
+          color: #fff;
+          &:hover, &:focus {
+            background-color: rgba(0,0,0,0.3);
+            border-bottom: 0;
+            color: #fff;
+          }
+        }
+      }
+      .active {
+        a {
+          border-bottom: 0;
+          background-color: rgba(0,0,0,0.2);
+          &:hover, &:focus {
+            background-color: rgba(0,0,0,0.3);
+            border-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .navbar-toggle {
+    border-color: $highlight-1;
+    &:hover, &:focus {
+      background-color: $highlight-1;
+      .icon-bar {
+        background-color: #fff;
+      }
+    }
+    .icon-bar {
+      background-color: $highlight-1;
+    }
+  }
 }
 .sticky-background {
-  background-color: #f63440;
-  transition: background-color 0.3s ease-in;
+  background-color: $highlight-1;
+  transition: all 0.3s ease-in;
   .navbar-nav {
     li {
       a {
