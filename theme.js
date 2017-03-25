@@ -36,8 +36,20 @@ $(function(){
     }, 700);
   })
 
-
-
-
+ //expanded function
+  $('.open-button').on('click', function(e){
+    var $this = $(this);
+    //  var button = $(e.target),
+    //    targetId = button.attr('href'),
+    //    target = $(targetId);
+      e.preventDefault();
+     $('.content-wrapper').toggleClass('expanded');
+    //  Change Button Content
+     if($('.content-wrapper').hasClass('expanded')){
+       $this.html('SHOW LESS');
+     }else{
+       $this.html('READ MORE');
+     };
+  });
 
 })
