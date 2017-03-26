@@ -301,69 +301,80 @@ h1, h2 {
 /* line 239, ../sass/theme.scss */
 .food-features {
   position: relative;
-  margin-top: 100px;
+  margin-top: 60px;
 }
-@media (max-width: 768px) {
-  /* line 239, ../sass/theme.scss */
-  .food-features {
-    margin-top: 60px;
-  }
-}
-
-/* line 246, ../sass/theme.scss */
-.feature {
-  border-radius: 100%;
-  background-color: #666;
-  color: #fff;
-  margin: 0 auto;
-  text-align: center;
-  width: 220px;
-  height: 220px;
-}
-@media (max-width: 768px) {
-  /* line 246, ../sass/theme.scss */
-  .feature {
-    margin-bottom: 30px;
-  }
-}
-/* line 257, ../sass/theme.scss */
-.feature h3 {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* line 266, ../sass/theme.scss */
-.food-dt {
-  position: relative;
-  margin-top: 100px;
-  margin-bottom: 60px;
-}
-/* line 270, ../sass/theme.scss */
-.food-dt h2 {
+/* line 242, ../sass/theme.scss */
+.food-features h2 {
   text-align: center;
   margin: 37.5px auto;
 }
-@media (max-width: 768px) {
-  /* line 266, ../sass/theme.scss */
-  .food-dt {
-    margin-top: 60px;
-  }
+
+/* line 249, ../sass/theme.scss */
+#slider {
+  width: 840px;
+  height: 426px;
+  overflow: hidden;
+  margin: 50px auto;
+  box-shadow: 2px 2px 2px #666;
 }
 
-/* line 279, ../sass/theme.scss */
+/* line 257, ../sass/theme.scss */
+.slides {
+  display: block;
+  width: 3360px;
+  height: 426px;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 265, ../sass/theme.scss */
+.slide {
+  float: left;
+  list-style-type: none;
+  width: 840px;
+  height: 426px;
+  position: relative;
+}
+/* line 271, ../sass/theme.scss */
+.slide img {
+  width: 100%;
+}
+/* line 274, ../sass/theme.scss */
+.slide h3 {
+  position: absolute;
+  bottom: 0;
+  background: rgba(17, 17, 17, 0.6);
+  color: #fff;
+  padding: 15px;
+  margin: 0;
+  width: 100%;
+}
+
+/* line 287, ../sass/theme.scss */
+.food-dt {
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+/* line 291, ../sass/theme.scss */
+.food-dt h2 {
+  text-align: center;
+  margin: 37.5px auto;
+  margin-bottom: 60px;
+}
+
+/* line 298, ../sass/theme.scss */
 .detail img {
   width: 100%;
 }
 @media (max-width: 768px) {
-  /* line 278, ../sass/theme.scss */
+  /* line 297, ../sass/theme.scss */
   .detail {
     margin-bottom: 30px;
   }
 }
 
-/* line 287, ../sass/theme.scss */
+/* line 306, ../sass/theme.scss */
 footer {
   background-color: #666;
   width: 100%;

@@ -238,41 +238,60 @@
 //Feature Section
 .food-features {
   position: relative;
-  margin-top: 100px;
-  @media (max-width: $sm-screen) {
-    margin-top: 60px;
-  }
-}
-.feature {
-  border-radius: 100%;
-  background-color: #666;
-  color: #fff;
-  margin: 0 auto;
-  text-align: center;
-  width: 220px;
-  height: 220px;
-  @media (max-width: $sm-screen) {
-    margin-bottom: $spacing*2;
-  }
-  h3 {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-//Food Examples
-.food-dt {
-  position: relative;
-  margin-top: 100px;
-  margin-bottom: 60px;
+  margin-top: 60px;
   h2 {
     text-align: center;
     margin: $spacing*2.5 auto;
   }
-  @media (max-width: $sm-screen) {
-    margin-top: 60px;
+}
+// Slider
+
+#slider {
+    width: 840px;
+    height: 426px;
+    overflow: hidden;
+    margin: 50px auto;
+    box-shadow: 2px 2px 2px #666;
+}
+
+.slides {
+    display: block;
+    width: 3360px;
+    height: 426px;
+    margin: 0;
+    padding: 0;
+}
+
+.slide {
+    float: left;
+    list-style-type: none;
+    width: 840px;
+    height: 426px;
+    position: relative;
+    img {
+      width: 100%;
+    }
+    h3 {
+      position: absolute;
+      bottom: 0;
+      background: rgba(17, 17, 17, 0.6);
+      color: #fff;
+      padding: $spacing;
+      margin: 0;
+      width: 100%;
+    }
+}
+
+
+//Food Examples
+.food-dt {
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  h2 {
+    text-align: center;
+    margin: $spacing*2.5 auto;
+    margin-bottom: 60px;
   }
 }
 .detail {
