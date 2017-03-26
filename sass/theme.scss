@@ -177,13 +177,15 @@
 .top-button {
   position: fixed;
   bottom: 0;
-  right: 0;
-  width: 42px;
-  height: 42px;
-  background-color: #666;
+  right: -31px;
+  padding: 5px 8px;
+  background-color: $highlight-1;
   border: 0;
   color: #fff;
-  margin-bottom: $spacing*2;
+  margin-bottom: 40px;
+  z-index: 99;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
   &:focus {
     outline: none;
   }
