@@ -57,7 +57,7 @@ $(function(){
     var width = 840;
     var animationSpeed = 1500;
     var pause = 3000;
-    var currentSlide = 1;
+    var currentSlide = 0;
 
     var $slider = $('#slider');
     var $slideContainer = $slider.find('.slides');
@@ -69,8 +69,8 @@ $(function(){
         interval = setInterval(function(){ //animate margin-left
             $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function(){
                 currentSlide++;
-                if (currentSlide > $slides.length){
-                    currentSlide = 1;
+                if (currentSlide === $slides.length){
+                    currentSlide = 0;
                     $slideContainer.css('margin-left', 0);   //If it's last slide, go back
              }
           });
@@ -86,6 +86,5 @@ $(function(){
     $slider.on('mouseenter', stopSlider).on('mouseleave', startSlider);
 
     startSlider();
-
 
 })
