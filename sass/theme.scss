@@ -25,6 +25,11 @@ h1, h2 {
   font-family: $header-font;
 }
 
+button, a {
+  &:hover, &:focus {
+    outline: none;
+  }
+}
 //Theme Color
 $highlight-1:   #f63440;
 
