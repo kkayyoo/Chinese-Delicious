@@ -1,44 +1,44 @@
-/* Welcome to Compass. Use this file to define print styles.
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
 @import url("https://fonts.googleapis.com/css?family=Delius+Unicase|Open+Sans");
-/* line 19, ../sass/setting.scss */
+/* line 19, ../sass/theme.scss */
 p, li {
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 24, ../sass/setting.scss */
+/* line 24, ../sass/theme.scss */
 h1, h2 {
   font-family: "Delius Unicase", cursive;
 }
 
-/* line 5, ../sass/theme.scss */
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* line 4, ../sass/_details.scss */
 .home-nav {
   width: 80px;
   height: 100vh;
   background-color: #333;
 }
 @media (max-width: 768px) {
-  /* line 5, ../sass/theme.scss */
+  /* line 4, ../sass/_details.scss */
   .home-nav {
     width: 100%;
     height: 52px;
   }
 }
 
-/* line 14, ../sass/theme.scss */
+/* line 13, ../sass/_details.scss */
 .panel-wrapper {
   display: flex;
 }
 @media (max-width: 768px) {
-  /* line 14, ../sass/theme.scss */
+  /* line 13, ../sass/_details.scss */
   .panel-wrapper {
     flex-wrap: wrap;
   }
 }
 
-/* line 20, ../sass/theme.scss */
+/* line 19, ../sass/_details.scss */
 .panel {
   width: calc(100%*1 / 4);
   height: 100vh;
@@ -47,40 +47,40 @@ h1, h2 {
   margin-bottom: 0;
 }
 @media (max-width: 768px) {
-  /* line 20, ../sass/theme.scss */
+  /* line 19, ../sass/_details.scss */
   .panel {
     width: 100%;
     height: 280px;
   }
 }
 
-/* line 36, ../sass/theme.scss */
+/* line 35, ../sass/_details.scss */
 .navbar-default {
   background-color: transparent;
   background-image: none;
   border: none;
   box-shadow: none;
 }
-/* line 41, ../sass/theme.scss */
+/* line 40, ../sass/_details.scss */
 .navbar-default .navbar-nav {
   margin: 0 -15px;
 }
 @media (min-width: 768px) {
-  /* line 41, ../sass/theme.scss */
+  /* line 40, ../sass/_details.scss */
   .navbar-default .navbar-nav {
     margin: 0;
   }
 }
-/* line 47, ../sass/theme.scss */
+/* line 46, ../sass/_details.scss */
 .navbar-default .navbar-nav li a {
   color: #fff;
 }
-/* line 49, ../sass/theme.scss */
+/* line 48, ../sass/_details.scss */
 .navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus {
   border-bottom: 2px solid #f63440;
   color: #fff;
 }
-/* line 56, ../sass/theme.scss */
+/* line 55, ../sass/_details.scss */
 .navbar-default .navbar-nav .active a {
   background-image: none;
   background-color: transparent;
@@ -88,81 +88,81 @@ h1, h2 {
   box-shadow: none;
   color: #fff;
 }
-/* line 62, ../sass/theme.scss */
+/* line 61, ../sass/_details.scss */
 .navbar-default .navbar-nav .active a:hover, .navbar-default .navbar-nav .active a:focus {
   background-color: transparent;
   color: #fff;
 }
 @media (max-width: 768px) {
-  /* line 69, ../sass/theme.scss */
+  /* line 68, ../sass/_details.scss */
   .navbar-default .navbar-collapse {
     background-color: #f63440;
   }
-  /* line 73, ../sass/theme.scss */
+  /* line 72, ../sass/_details.scss */
   .navbar-default .navbar-collapse li a {
     color: #fff;
   }
-  /* line 75, ../sass/theme.scss */
+  /* line 74, ../sass/_details.scss */
   .navbar-default .navbar-collapse li a:hover, .navbar-default .navbar-collapse li a:focus {
     background-color: rgba(0, 0, 0, 0.3);
     border-bottom: 0;
     color: #fff;
   }
-  /* line 83, ../sass/theme.scss */
+  /* line 82, ../sass/_details.scss */
   .navbar-default .navbar-collapse .active a {
     border-bottom: 0;
     background-color: rgba(0, 0, 0, 0.2);
   }
-  /* line 86, ../sass/theme.scss */
+  /* line 85, ../sass/_details.scss */
   .navbar-default .navbar-collapse .active a:hover, .navbar-default .navbar-collapse .active a:focus {
     background-color: rgba(0, 0, 0, 0.3);
     border-bottom: 0;
   }
 }
-/* line 94, ../sass/theme.scss */
+/* line 93, ../sass/_details.scss */
 .navbar-default .navbar-toggle {
   border-color: #f63440;
 }
-/* line 96, ../sass/theme.scss */
+/* line 95, ../sass/_details.scss */
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background-color: #f63440;
 }
-/* line 98, ../sass/theme.scss */
+/* line 97, ../sass/_details.scss */
 .navbar-default .navbar-toggle:hover .icon-bar, .navbar-default .navbar-toggle:focus .icon-bar {
   background-color: #fff;
 }
-/* line 102, ../sass/theme.scss */
+/* line 101, ../sass/_details.scss */
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #f63440;
 }
 
-/* line 107, ../sass/theme.scss */
+/* line 106, ../sass/_details.scss */
 .sticky-background {
   background-color: #f63440;
   transition: all 0.3s ease-in;
 }
-/* line 112, ../sass/theme.scss */
+/* line 111, ../sass/_details.scss */
 .sticky-background .navbar-nav li a {
   color: #fff;
 }
-/* line 114, ../sass/theme.scss */
+/* line 113, ../sass/_details.scss */
 .sticky-background .navbar-nav li a:hover, .sticky-background .navbar-nav li a:focus {
   background-color: rgba(0, 0, 0, 0.3);
   border-bottom: 0;
   color: #fff;
 }
-/* line 122, ../sass/theme.scss */
+/* line 121, ../sass/_details.scss */
 .sticky-background .navbar-nav .active a {
   border-bottom: 0;
   background-color: rgba(0, 0, 0, 0.2);
 }
-/* line 125, ../sass/theme.scss */
+/* line 124, ../sass/_details.scss */
 .sticky-background .navbar-nav .active a:hover, .sticky-background .navbar-nav .active a:focus {
   background-color: rgba(0, 0, 0, 0.3);
   border-bottom: 0;
 }
 
-/* line 133, ../sass/theme.scss */
+/* line 132, ../sass/_details.scss */
 .hero {
   width: 100%;
   min-height: 380px;
@@ -171,7 +171,7 @@ h1, h2 {
   background-position: center center;
   background-repeat: no-repeat;
 }
-/* line 140, ../sass/theme.scss */
+/* line 139, ../sass/_details.scss */
 .hero:before {
   content: '';
   position: absolute;
@@ -181,12 +181,12 @@ h1, h2 {
   background: rgba(17, 17, 17, 0.6);
 }
 
-/* line 150, ../sass/theme.scss */
+/* line 149, ../sass/_details.scss */
 #hero1 {
   background-image: url("../images/hero1.png");
 }
 
-/* line 153, ../sass/theme.scss */
+/* line 152, ../sass/_details.scss */
 .hero-info {
   text-align: center;
   margin-top: -240px;
@@ -194,32 +194,32 @@ h1, h2 {
   padding: 0 90px;
 }
 @media (max-width: 768px) {
-  /* line 153, ../sass/theme.scss */
+  /* line 152, ../sass/_details.scss */
   .hero-info {
     margin-top: -300px;
     padding: 0 30px;
   }
 }
-/* line 162, ../sass/theme.scss */
+/* line 161, ../sass/_details.scss */
 .hero-info h1 {
   color: #fff;
   font-size: 3.8rem;
   margin-bottom: 30px;
 }
-/* line 167, ../sass/theme.scss */
+/* line 166, ../sass/_details.scss */
 .hero-info p {
   color: #fff;
   font-size: 2.2rem;
   text-align: left;
 }
 @media (max-width: 768px) {
-  /* line 167, ../sass/theme.scss */
+  /* line 166, ../sass/_details.scss */
   .hero-info p {
     min-height: 200px;
   }
 }
 
-/* line 177, ../sass/theme.scss */
+/* line 176, ../sass/_details.scss */
 .top-button {
   position: fixed;
   bottom: 0;
@@ -233,41 +233,41 @@ h1, h2 {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-/* line 189, ../sass/theme.scss */
+/* line 188, ../sass/_details.scss */
 .top-button:focus {
   outline: none;
 }
 
-/* line 194, ../sass/theme.scss */
+/* line 193, ../sass/_details.scss */
 .food-intro {
   position: relative;
   margin-top: 150px;
 }
 @media (max-width: 768px) {
-  /* line 194, ../sass/theme.scss */
+  /* line 193, ../sass/_details.scss */
   .food-intro {
     margin-top: 60px;
   }
 }
 
-/* line 202, ../sass/theme.scss */
+/* line 201, ../sass/_details.scss */
 .food-img img {
   width: 100%;
 }
 @media (max-width: 768px) {
-  /* line 201, ../sass/theme.scss */
+  /* line 200, ../sass/_details.scss */
   .food-img {
     margin-bottom: 15px;
   }
 }
 
-/* line 209, ../sass/theme.scss */
+/* line 208, ../sass/_details.scss */
 .content-wrapper {
   height: 280px;
   position: relative;
   overflow: hidden;
 }
-/* line 213, ../sass/theme.scss */
+/* line 212, ../sass/_details.scss */
 .content-wrapper:after {
   content: ' ';
   width: 100%;
@@ -278,38 +278,38 @@ h1, h2 {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.65) 47%, white 100%);
 }
 
-/* line 223, ../sass/theme.scss */
+/* line 222, ../sass/_details.scss */
 .expanded {
   height: 100%;
 }
-/* line 225, ../sass/theme.scss */
+/* line 224, ../sass/_details.scss */
 .expanded:after {
   content: none;
 }
 
-/* line 229, ../sass/theme.scss */
+/* line 228, ../sass/_details.scss */
 .open-button {
   position: relative;
   display: block;
   margin: 30px auto;
 }
-/* line 233, ../sass/theme.scss */
+/* line 232, ../sass/_details.scss */
 .open-button:focus {
   outline: none;
 }
 
-/* line 239, ../sass/theme.scss */
+/* line 238, ../sass/_details.scss */
 .food-features {
   position: relative;
   margin-top: 60px;
 }
-/* line 242, ../sass/theme.scss */
+/* line 241, ../sass/_details.scss */
 .food-features h2 {
   text-align: center;
   margin: 37.5px auto;
 }
 
-/* line 249, ../sass/theme.scss */
+/* line 248, ../sass/_details.scss */
 #slider {
   width: 840px;
   height: 426px;
@@ -318,7 +318,7 @@ h1, h2 {
   box-shadow: 2px 2px 2px #666;
 }
 
-/* line 257, ../sass/theme.scss */
+/* line 256, ../sass/_details.scss */
 .slides {
   display: block;
   width: 3360px;
@@ -327,7 +327,7 @@ h1, h2 {
   padding: 0;
 }
 
-/* line 265, ../sass/theme.scss */
+/* line 264, ../sass/_details.scss */
 .slide {
   float: left;
   list-style-type: none;
@@ -335,11 +335,11 @@ h1, h2 {
   height: 426px;
   position: relative;
 }
-/* line 271, ../sass/theme.scss */
+/* line 270, ../sass/_details.scss */
 .slide img {
   width: 100%;
 }
-/* line 274, ../sass/theme.scss */
+/* line 273, ../sass/_details.scss */
 .slide h3 {
   position: absolute;
   bottom: 0;
@@ -350,41 +350,41 @@ h1, h2 {
   width: 100%;
 }
 
-/* line 287, ../sass/theme.scss */
+/* line 286, ../sass/_details.scss */
 .food-dt {
   position: relative;
   margin-top: 60px;
   margin-bottom: 60px;
 }
-/* line 291, ../sass/theme.scss */
+/* line 290, ../sass/_details.scss */
 .food-dt h2 {
   text-align: center;
   margin: 37.5px auto;
   margin-bottom: 60px;
 }
 
-/* line 297, ../sass/theme.scss */
+/* line 296, ../sass/_details.scss */
 .detail {
   position: relative;
 }
-/* line 299, ../sass/theme.scss */
+/* line 298, ../sass/_details.scss */
 .detail img {
   width: 100%;
 }
 @media (max-width: 768px) {
-  /* line 297, ../sass/theme.scss */
+  /* line 296, ../sass/_details.scss */
   .detail {
     margin-bottom: 30px;
   }
 }
-/* line 306, ../sass/theme.scss */
+/* line 305, ../sass/_details.scss */
 .detail:hover .dt-info {
   border-radius: 0;
   -webkit-transform: scale(0);
   transform: scale(1);
 }
 
-/* line 313, ../sass/theme.scss */
+/* line 312, ../sass/_details.scss */
 .dt-info {
   background-color: rgba(246, 52, 64, 0.9);
   position: absolute;
@@ -398,26 +398,26 @@ h1, h2 {
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
-/* line 326, ../sass/theme.scss */
+/* line 325, ../sass/_details.scss */
 .dt-info h3 {
   color: #fff;
   margin-top: 25%;
   margin-bottom: 30px;
 }
-/* line 331, ../sass/theme.scss */
+/* line 330, ../sass/_details.scss */
 .dt-info .dt-button {
   background: transparent;
   border: 2px solid #fff;
   border-radius: 0;
   color: #fff;
 }
-/* line 336, ../sass/theme.scss */
+/* line 335, ../sass/_details.scss */
 .dt-info .dt-button:hover {
   background: rgba(255, 255, 255, 0.42);
   color: #fff;
 }
 
-/* line 342, ../sass/theme.scss */
+/* line 341, ../sass/_details.scss */
 .recipe-modal {
   /**Default imageModal to hidden**/
   display: none;
@@ -430,13 +430,13 @@ h1, h2 {
   left: 0;
   background: rgba(0, 0, 0, 0.8);
 }
-/* line 353, ../sass/theme.scss */
+/* line 352, ../sass/_details.scss */
 .recipe-modal:target {
   outline: none;
   display: block;
 }
 
-/* line 358, ../sass/theme.scss */
+/* line 357, ../sass/_details.scss */
 .recipe-dt {
   background-color: #fff;
   display: flex;
@@ -447,7 +447,7 @@ h1, h2 {
   transform: translate(-50%, -50%);
 }
 @media (max-width: 768px) {
-  /* line 358, ../sass/theme.scss */
+  /* line 357, ../sass/_details.scss */
   .recipe-dt {
     flex-flow: column;
     top: 52%;
@@ -455,17 +455,17 @@ h1, h2 {
   }
 }
 
-/* line 373, ../sass/theme.scss */
+/* line 372, ../sass/_details.scss */
 .recipe-info {
   padding: 22.5px;
 }
-/* line 375, ../sass/theme.scss */
+/* line 374, ../sass/_details.scss */
 .recipe-info h3 {
   margin-bottom: 22.5px;
   font-family: "Delius Unicase", cursive;
 }
 
-/* line 380, ../sass/theme.scss */
+/* line 379, ../sass/_details.scss */
 .closed-bt {
   color: #f63440;
   font-size: 28px;
@@ -473,7 +473,7 @@ h1, h2 {
   padding-right: 15px;
   padding-top: 10px;
 }
-/* line 386, ../sass/theme.scss */
+/* line 385, ../sass/_details.scss */
 .closed-bt .closed-text {
   display: none;
   border: 2px solid #f63440;
@@ -484,30 +484,30 @@ h1, h2 {
   padding: 5px 20px;
   text-transform: uppercase;
 }
-/* line 396, ../sass/theme.scss */
+/* line 395, ../sass/_details.scss */
 .closed-bt:hover, .closed-bt:focus {
   color: #333;
   text-decoration: none;
 }
 @media (max-width: 768px) {
-  /* line 380, ../sass/theme.scss */
+  /* line 379, ../sass/_details.scss */
   .closed-bt {
     display: block;
     margin: 15px auto;
     margin-bottom: 30px;
     padding: 0;
   }
-  /* line 405, ../sass/theme.scss */
+  /* line 404, ../sass/_details.scss */
   .closed-bt .glyphicon {
     display: none;
   }
-  /* line 408, ../sass/theme.scss */
+  /* line 407, ../sass/_details.scss */
   .closed-bt .closed-text {
     display: block;
   }
 }
 
-/* line 413, ../sass/theme.scss */
+/* line 412, ../sass/_details.scss */
 footer {
   background-color: #666;
   width: 100%;
