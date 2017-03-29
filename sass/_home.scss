@@ -58,6 +58,11 @@
     height: 280px;
   }
 }
+.panel-content {
+  display: none;
+  left: calc(100% * 1 / 4);
+  padding: $spacing*3 $spacing*2;
+}
 .panel1 {
   left: calc(100% * 0 / 4);
 }
