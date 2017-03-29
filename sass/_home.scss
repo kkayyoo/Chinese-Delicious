@@ -60,8 +60,12 @@
 }
 .panel-content {
   display: none;
+  position: absolute;
   left: calc(100% * 1 / 4);
   padding: $spacing*3 $spacing*2;
+}
+.view-panel {
+  display: block;
 }
 .panel1 {
   left: calc(100% * 0 / 4);
@@ -107,5 +111,8 @@
   .panel1, .panel2, .panel3, .panel4,
   .panel-active, .panel-push-left, .panel-push-right {
     left: 0;
+  }
+  .panel-content, .view-panel {
+    display: none;
   }
 }
