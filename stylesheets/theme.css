@@ -564,3 +564,11 @@ footer {
 .panel-push-right {
   left: 100%;
 }
+
+@media (max-width: 768px) {
+  /* line 71, ../sass/_home.scss */
+  .panel1, .panel2, .panel3, .panel4,
+  .panel-active, .panel-push-left, .panel-push-right {
+    left: 0;
+  }
+}
