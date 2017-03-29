@@ -87,4 +87,28 @@ $(function(){
 
     startSlider();
 
+
+  //Home page open panel
+  //Idea from http://codepen.io/saeedreza/pen/GgrEGX
+    $('.panel').click(function() {
+
+      var n = $(this).attr('number');
+      var i, toggle_class;
+
+      console.log(n);
+
+      for(i = 1; i <= 4; ++i) {
+
+        if(i == n) {
+          toggle_class = 'panel-active';
+        } else if ( i < n ) {
+          toggle_class = 'panel-push-left';
+        } else if ( i > n ) {
+          toggle_class = 'panel-push-right';
+        }
+
+        $('.panel' + i).toggleClass(toggle_class);
+      }
+    })
+
 })
