@@ -95,8 +95,6 @@ $(function(){
       var n = $(this).attr('number');
       var i, toggle_class;
 
-      console.log(n);
-
       for(i = 1; i <= 4; ++i) {
 
         if(i == n) {
@@ -108,6 +106,14 @@ $(function(){
         }
 
         $('.panel' + i).toggleClass(toggle_class);
+
+        var curPanel = $('.panel' + i);
+
+        if(curPanel.hasClass('panel-active')) {
+          $('.panel-content' + i).addClass('view-panel');
+        } else {
+          $('.panel-content' + i).removeClass('view-panel');
+        }
       }
     })
 
