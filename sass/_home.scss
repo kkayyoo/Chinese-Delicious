@@ -36,12 +36,14 @@
   height: 100vh;
   border: 1px solid #333;
   border-radius: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-bottom: 0;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   &:before {
     content: ' ';
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.4);
     position: absolute;
     top: 0;
     width: 100%;
@@ -50,6 +52,17 @@
   &:hover {
     &:before {
       content: none;
+    }
+    .panel-info {
+      h2, h3 {
+        color: $highlight-2;
+      }
+    }
+    .open-panel {
+      border-color: $highlight-2;
+      .glyphicon {
+        color: $highlight-2;
+      }
     }
   }
   @media (max-width: $sm-screen) {
@@ -60,24 +73,33 @@
 }
 .panel-content {
   display: none;
+  background-image: url('../images/food-bg.png');
   position: absolute;
   left: calc(100% * 1 / 4);
   padding: $spacing*3 $spacing*2;
+  width: calc(100% / 4 * 3);
+  height: 100vh;
 }
 .view-panel {
   display: block;
 }
 .panel1 {
   left: calc(100% * 0 / 4);
+  background-image: url('../images/fb-lu.png');
 }
 .panel2 {
   left: calc(100% * 1 / 4);
+  background-image: url('../images/fb-can.png');
 }
 .panel3 {
   left: calc(100% * 2 / 4);
+  background-image: url('../images/fb-chuan.png');
 }
 .panel4 {
   left: calc(100% * 3 / 4);
+  background-image: url('../images/fb-su.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .panel-active {
   left: calc(100% * 0 / 4);
@@ -91,9 +113,14 @@
 
 .panel-info {
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 99;
+  h2, h3 {
+    color: #fff;
+    text-align: center;
+  }
   .open-panel {
     display: block;
     margin: $spacing*2 auto;
@@ -103,6 +130,9 @@
     padding: 15px 18px;
     &:hover, &:focus {
       outline: none;
+    }
+    .glyphicon {
+      color: #fff;
     }
   }
 }

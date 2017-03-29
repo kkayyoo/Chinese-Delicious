@@ -522,22 +522,36 @@ footer {
   height: 100vh;
   border: 1px solid #333;
   border-radius: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-bottom: 0;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 42, ../sass/_home.scss */
+/* line 44, ../sass/_home.scss */
 .panel:before {
   content: ' ';
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
-/* line 51, ../sass/_home.scss */
+/* line 53, ../sass/_home.scss */
 .panel:hover:before {
   content: none;
+}
+/* line 57, ../sass/_home.scss */
+.panel:hover .panel-info h2, .panel:hover .panel-info h3 {
+  color: #2b2d8c;
+}
+/* line 61, ../sass/_home.scss */
+.panel:hover .open-panel {
+  border-color: #2b2d8c;
+}
+/* line 63, ../sass/_home.scss */
+.panel:hover .open-panel .glyphicon {
+  color: #2b2d8c;
 }
 @media (max-width: 768px) {
   /* line 33, ../sass/_home.scss */
@@ -548,62 +562,77 @@ footer {
   }
 }
 
-/* line 61, ../sass/_home.scss */
+/* line 74, ../sass/_home.scss */
 .panel-content {
   display: none;
+  background-image: url("../images/food-bg.png");
   position: absolute;
   left: calc(100% * 1 / 4);
   padding: 45px 30px;
+  width: calc(100% / 4 * 3);
+  height: 100vh;
 }
 
-/* line 67, ../sass/_home.scss */
+/* line 83, ../sass/_home.scss */
 .view-panel {
   display: block;
 }
 
-/* line 70, ../sass/_home.scss */
+/* line 86, ../sass/_home.scss */
 .panel1 {
   left: calc(100% * 0 / 4);
+  background-image: url("../images/fb-lu.png");
 }
 
-/* line 73, ../sass/_home.scss */
+/* line 90, ../sass/_home.scss */
 .panel2 {
   left: calc(100% * 1 / 4);
+  background-image: url("../images/fb-can.png");
 }
 
-/* line 76, ../sass/_home.scss */
+/* line 94, ../sass/_home.scss */
 .panel3 {
   left: calc(100% * 2 / 4);
+  background-image: url("../images/fb-chuan.png");
 }
 
-/* line 79, ../sass/_home.scss */
+/* line 98, ../sass/_home.scss */
 .panel4 {
   left: calc(100% * 3 / 4);
+  background-image: url("../images/fb-su.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* line 82, ../sass/_home.scss */
+/* line 104, ../sass/_home.scss */
 .panel-active {
   left: calc(100% * 0 / 4);
 }
 
-/* line 85, ../sass/_home.scss */
+/* line 107, ../sass/_home.scss */
 .panel-push-left {
   left: 0;
 }
 
-/* line 88, ../sass/_home.scss */
+/* line 110, ../sass/_home.scss */
 .panel-push-right {
   left: 100%;
 }
 
-/* line 92, ../sass/_home.scss */
+/* line 114, ../sass/_home.scss */
 .panel-info {
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 99;
 }
-/* line 97, ../sass/_home.scss */
+/* line 120, ../sass/_home.scss */
+.panel-info h2, .panel-info h3 {
+  color: #fff;
+  text-align: center;
+}
+/* line 124, ../sass/_home.scss */
 .panel-info .open-panel {
   display: block;
   margin: 30px auto;
@@ -612,19 +641,23 @@ footer {
   border-radius: 100px;
   padding: 15px 18px;
 }
-/* line 104, ../sass/_home.scss */
+/* line 131, ../sass/_home.scss */
 .panel-info .open-panel:hover, .panel-info .open-panel:focus {
   outline: none;
 }
+/* line 134, ../sass/_home.scss */
+.panel-info .open-panel .glyphicon {
+  color: #fff;
+}
 
 @media (max-width: 768px) {
-  /* line 111, ../sass/_home.scss */
+  /* line 141, ../sass/_home.scss */
   .panel1, .panel2, .panel3, .panel4,
   .panel-active, .panel-push-left, .panel-push-right {
     left: 0;
   }
 
-  /* line 115, ../sass/_home.scss */
+  /* line 145, ../sass/_home.scss */
   .panel-content, .view-panel {
     display: none;
   }
