@@ -22,6 +22,12 @@
       }
     }
   }
+  .navbar-toggle {
+    border-color: #fff;
+    .icon-bar {
+      background-color: #fff;
+    }
+  }
 }
 .panel-wrapper {
   display: flex;

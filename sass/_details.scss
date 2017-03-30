@@ -37,6 +37,16 @@
       }
     }
   }
+  .navbar-brand {
+    width: 50px;
+    padding: 0;
+    img {
+      width: 100%;
+    }
+    @media (max-width: $sm-screen) {
+      margin-left: $spacing;
+    }
+  }
   .navbar-collapse {
     @media (max-width: $sm-screen) {
       background-color: $highlight-1;
