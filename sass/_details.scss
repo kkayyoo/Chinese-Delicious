@@ -17,6 +17,7 @@
     li {
       a {
         color: #fff;
+        text-transform: uppercase;
         &:hover, &:focus {
           border-bottom: 2px solid $highlight-1;
           color: #fff;
