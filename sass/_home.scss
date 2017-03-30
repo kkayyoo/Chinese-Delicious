@@ -76,6 +76,7 @@
     position: relative;
     width: 100%;
     height: 280px;
+    background-position: bottom;
   }
 }
 .panel-content {
@@ -154,6 +155,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 99;
+  @media (max-width: $sm-screen) {
+    top: 55%;
+  }
   h2, h3 {
     color: #fff;
     text-align: center;
