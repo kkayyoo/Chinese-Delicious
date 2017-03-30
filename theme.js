@@ -10,7 +10,6 @@ $(function(){
 //Sticky Nav background-color
   $(document).scroll(function(){
     var scrollTop = $(this).scrollTop();
-    //var headerTop= $('.hero').scrollTop();
     if(scrollTop > 320) {
       $('.navbar-default').addClass('sticky-background');
     } else {
@@ -39,16 +38,13 @@ $(function(){
  //expanded function
   $('.open-button').on('click', function(e){
     var $this = $(this);
-    //  var button = $(e.target),
-    //    targetId = button.attr('href'),
-    //    target = $(targetId);
       e.preventDefault();
      $('.content-wrapper').toggleClass('expanded');
     //  Change Button Content
      if($('.content-wrapper').hasClass('expanded')){
-       $this.html('SHOW LESS');
+       $this.html('Show Less');
      }else{
-       $this.html('READ MORE');
+       $this.html('Read More');
      };
   });
 

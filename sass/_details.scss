@@ -212,8 +212,14 @@
   position: relative;
   display: block;
   margin: $spacing*2 auto;
-  &:focus {
-    outline: none;
+  background-color: transparent;
+  border: 2px solid $highlight-1;
+  border-radius: 0;
+  color: $highlight-1;
+  &:hover, &:focus, &:active {
+    outline: none!important;
+    background-color: $highlight-1;
+    color: #fff;
   }
 }
 
