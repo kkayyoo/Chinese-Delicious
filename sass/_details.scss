@@ -374,9 +374,17 @@
 }
 .recipe-info {
   padding: $spacing*1.5;
+  text-align: left;
   h3 {
     margin-bottom: $spacing*1.5;
     font-family: $header-font;
+    text-align: center;
+  }
+  ol {
+    li {
+      line-height: 26px;
+      padding-bottom: 10px;
+    }
   }
 }
 .closed-bt {
