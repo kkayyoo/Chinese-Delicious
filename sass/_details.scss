@@ -130,7 +130,16 @@
 
 }
 #hero1 {
-  background-image: url('../images/hero1.png');
+  background-image: url('../images/lu-bg.png');
+}
+#hero2 {
+  background-image: url('../images/yue-bg.png');
+}
+#hero3 {
+  background-image: url('../images/chuan-bg2.png');
+}
+#hero4 {
+  background-image: url('../images/huaiyang-bg.png');
 }
 .hero-info {
   text-align: center;
@@ -138,13 +147,14 @@
   position: relative;
   padding: 0 $spacing*6;
   @media (max-width: $sm-screen) {
-    margin-top: -300px;
+    margin-top: -260px;
     padding: 0 $spacing*2;
   }
   h1 {
     color: #fff;
     font-size: 3.8rem;
     margin-bottom: $spacing*2;
+    line-height: 52px;
   }
   p {
     color: #fff;
@@ -175,9 +185,9 @@
 }
 .food-intro {
   position: relative;
-  margin-top: 150px;
+  margin-top: 220px;
   @media (max-width: $sm-screen) {
-    margin-top: 60px;
+    margin-top: 180px;
   }
 }
 .food-img {
